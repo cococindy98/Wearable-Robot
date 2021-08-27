@@ -1,0 +1,51 @@
+1. FPN
+model = smp.FPN(
+    encoder_name = encoder_name,
+    classes=13,
+    encoder_weights="imagenet",
+    activation=None,
+    encoder_depth=5,
+    decoder_pyramid_channels=512,
+    decoder_dropout=0.2,
+    upsampling=4,
+    decoder_segmentation_channels=128,
+    decoder_merge_policy="add",
+)
+
+2.DeepLabV3+
+model = smp.DeepLabV3Plus(
+    encoder_name = encoder_name,
+    classes=n_classes,
+    encoder_weights="imagenet",
+    activation=None,
+    encoder_depth=5,
+    decoder_channels=256,
+    encoder_output_stride=16,
+    upsampling=4,
+    decoder_atrous_rates=(12, 24, 36),
+)
+
+3.PSPNet
+model = smp.PSPNet(
+    encoder_name=encoder_name,
+    classes=n_classes,
+    encoder_weights="imagenet",
+    activation=None,
+    encoder_depth=3,
+    psp_out_channels=256,
+    psp_dropout=0.2,
+    upsampling=8,
+    psp_use_batchnorm=True,
+)
+4.U++
+model = smp.UnetPlusPlus(
+    encoder_name=encoder_name,
+    classes=13,
+    encoder_weights="imagenet",
+    activation=None,
+    encoder_depth=5,
+    decoder_use_batchnorm=True,
+    decoder_channels=(256, 128, 64, 32, 16),
+    decoder_attention_type=None,
+)
+

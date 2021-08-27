@@ -1,0 +1,14 @@
+__ignore__
+__background__
+building
+cat
+car
+chair
+street
+person
+grass
+tree
+road
+streetlamp
+stair
+
