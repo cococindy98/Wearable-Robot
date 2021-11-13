@@ -21,5 +21,4 @@ Furthermore, we would like to perform a real time semantic segmentation that sui
 
 ## Result of Study 
 ![image](https://user-images.githubusercontent.com/83954540/141611218-0ce5595c-36cd-4fa0-a088-8b1939bf1598.png)
-![Alt text]
 
